@@ -1,0 +1,204 @@
+/* RESET E BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('assets/sport.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #f0f0f0;
+  line-height: 1.6;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* CONTAINER GERAL */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+/* CABEÇALHO */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  color: #FFD700;
+  text-shadow: 2px 2px 5px black;
+  margin-top: 1rem;
+}
+
+header p {
+  color: #ccc;
+  margin-top: 0.5rem;
+}
+
+header nav {
+  margin-top: 1.5rem;
+}
+
+header nav a {
+  color: #FFD700;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+  padding: 0.3rem 0;
+}
+
+header nav a:hover {
+  color: #ff0000;
+}
+
+/* LINK ATIVO NO MENU */
+header nav a.active {
+  color: #ff0000;
+  border-bottom: 2px solid #ff0000;
+}
+
+/* IMAGEM DE PERFIL + ESTRELA */
+.estrela-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.estrela-unica {
+  width: 80px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.perfil-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid #FFD700;
+  object-fit: cover;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.6);
+}
+
+/* CARDS */
+.card {
+  background-color: rgba(30, 30, 30, 0.9);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-left: 8px solid #ff0000;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* ESTILOS PARA PROJETOS (página projetos.html) */
+.projeto-item {
+  margin-bottom: 1.8rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #444;
+}
+
+.projeto-item:last-child {
+  border-bottom: none;
+}
+
+.projeto-item h3 {
+  color: #FFD700;
+  margin-bottom: 0.5rem;
+}
+
+.projeto-item p {
+  margin-bottom: 0.8rem;
+}
+
+/* BOTÕES */
+.btn {
+  display: inline-block;
+  background-color: #FFD700;
+  color: #000;
+  padding: 0.5rem 1.2rem;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ff0000;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* LINKS GERAL */
+a {
+  color: #FFD700;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ff0000;
+}
+
+/* RODAPÉ */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: #bbb;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem;
+  }
+  
+  header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .card {
+    padding: 1.5rem;
+  }
+  
+  header nav a {
+    margin: 0 0.7rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Estilos novos para a seção "Sobre Mim" */
+.skills-list {
+  margin: 1rem 0 1.5rem 1.5rem;
+}
+
+.skills-list li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  left: 1.5rem;
+}
+
+.destaque {
+  background-color: rgba(255, 215, 0, 0.1);
+  border-left: 4px solid #FFD700;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+}
